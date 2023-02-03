@@ -14,7 +14,13 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  /* background: #343541; */
+  /* background: #f1f1f1; */
+  
+  background-image: url("assets/user.png");
+  background-repeat: no-repeat;
+ 
+  background-position: center top;
 
   display: flex;
   flex-direction: column;
@@ -37,6 +43,51 @@ body {
 
   padding-bottom: 20px;
   scroll-behavior: smooth;
+}
+
+/* **********CONVERSATION********** */
+
+.conversation {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow:hidden;
+}
+.talk {
+  margin: 20px 0;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  width: 50%;
+  margin-left: 10px;
+
+}
+.talk img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: auto;
+}
+
+.talk p {
+  padding: 15px;
+  line-height: 25px;
+  border-radius: 20px;
+  /* background: #000; */
+}
+.right {
+  margin-left: auto;
+}
+.right p {
+  margin-right: 10px;
+  background:#10a37f;
+}
+.left p {
+  margin-left: 10px;
+  background: rgb(216,216,216);
+  color: #000;
 }
 
 /* hides scrollbar */
@@ -89,11 +140,16 @@ body {
 } */
 
 .profile img {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 100%;
+  border-radius: 100%; */
 
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: auto;
+  object-fit:fill;
 }
 
 .message {
@@ -123,21 +179,22 @@ body {
 }
 
 form {
-  width: 100%;
+  width: 90%;
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414F;
-
+  background: #f1f1f1;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 textarea {
   width: 100%;
 
-  color: #fff;
+  color: #000;
   font-size: 18px;
 
   padding: 10px;
@@ -145,6 +202,7 @@ textarea {
   border-radius: 5px;
   border: none;
   outline: none;
+  text-align: center;
 }
 
 button {
